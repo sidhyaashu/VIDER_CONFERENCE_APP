@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#video-grid{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+video{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+.main_left{
+    flex: .8;
+    display: flex;
+    flex-direction: column;
+}
+.main_right{
+    flex: .2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #242324;
+}
+.main_video{
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_controls{
+    display: flex;
+    background-color: #1c1e20;
+    color: white;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_controls_block{
+    display: flex;
+    gap: 20px;
+
+}
+.main_controls_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main_controls_button:hover{
+    background-color:#2d3032 ;
+}
+.leave-button{
+    color: red;
+}
+
+
+.main_header{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.main_chat_window{
+    flex-grow: 1;
+}
+.main_message_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.main_message_container>input{
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+    border: none;
+    /* height: 100%; */
+}
+.main_message_container>button{
+    height: 100%;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+.main_message_container>button:hover{
+    background-color:#8d878d ;
+}
